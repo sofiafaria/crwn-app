@@ -20,3 +20,13 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+/*************************************JUST SOME NOTES ABOUT REDUX*****************************************
+ * Provider is a component we get from react-redux
+ * We want to wrap it around the entire application because we want everything inside to have access to the store object
+ * that we get from Redux
+ * 
+ * then we can pass the store into the properties of the provider
+ * 
+ */

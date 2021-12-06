@@ -55,6 +55,14 @@ class App extends React.Component {
 
 const mapDispatchToProp = dispatch =>({
   setCurrentUser: user => dispatch(setCurrentUser(user))
-})
+});
 
 export default connect(null, mapDispatchToProp)(App);
+
+/**
+ * App does not need currentUser anymore so we dont need any state to props.
+ * mapDispatchToProps will receive the dispatch and 
+ * the function to use as action
+ * dispatch is a way for redux to know that whatever object you are passing me is going to be an action object and i'm
+ * going to pass to every reducer
+ */

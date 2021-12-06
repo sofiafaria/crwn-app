@@ -9,3 +9,9 @@ const middlewares = [logger];
 const store = createStore(rootReducer, applyMiddleware(...middlewares));
 
 export default store;
+
+/**
+ * SOME NOTES ABOUT REDUX
+ * add middleware to our store so that whenever an action is fired we can catch them and display them.
+ * you can add infinite number of middlewares. that's why we use spread operators
+ */
